@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>one page</title>
+        <link rel="stylesheet" href="./assets/css/app.css">
+    </head>
+    <body>
+        <!-- Page body containing all other components -->
+        <main id="home-main">
+            <section id="hm-section-1">
+                <div class="hbg-name">
+                    <button class="hbg-btn">
+                        <img src="./assets/icons/Group 3801.svg" alt="" width="24px">
+                    </button>
+                    <p class="username">Hi, Aderinsola!</p>
+                </div>
+                <div>
+                    <img src="./assets/images/avatar.png" alt="" width="28px">
+                </div>
+            </section>
+            <section id="hm-section-2">
+                <div class="active-tab">
+                    <p>Home</p>
+                </div>
+                <div class="other-tab">
+                    <p>Upcoming</p>
+                </div>
+            </section>
+            <section id="hm-section-3">
+                <div>
+                    <p>Tap here to call us</p>
+                    <p style="font-weight: 300;">Do you have any inquiry about your meals? You can simply tap to call us.</p>
+                </div>
+                <div>
+                    <img src="./assets/images/meal.png" alt="" class="meal-image">
+                </div>
+            </section>
+
+            <section id="hm-meal-section">
+                <div class="meal-card-header">
+                    <p>Food Delivery 🥘</p>
+                    <button id="open-meal" onclick="openModal(this)" data-target="hm-meal-section-modal">
+                        View Status
+                        <img src="./assets/icons/Arrow.svg" alt="">
+                    </button>
+                </div>
+                <div class="meal-card-body">
+                    <div class="meal-card-image">
+                        <img src="./assets/images/Food Image.png" alt="">
+                    </div>
+                    <div>
+                        <p>French Fries with</p>
+                        <p>BBQ Turkey Wings & Coleslaw</p>
+                    </div>
+                </div>
+                <hr style="border: 1px solid rgba(189, 238, 205, 0.5);">
+                <div class="meal-card-footer">
+                    <img src="./assets/icons/Group.svg" alt="" style="margin-right: 8px;">
+                    <p style="color: #1D352A; font-size: 12px;">10:00 AM - 11:30AM</p>
+                </div>
+            </section>
+            <section id="hm-meal-section-modal" class="modal"> 
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="order-clock">Mon, 08 Sep 2021</p>
+                        <button style="border: 0; background: transparent;" class="modal-button" onclick="closeModal()">
+                            <img src="./assets/icons/Close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="order-status">
+                        <div>🥘</div>
+                        <div>
+                            <p>Order Status</p>
+                            <p>Order has arrived</p>
+                        </div>
+                    </div>
+                    <div class="delivery-address">
+                        <p>Delivery Address</p>
+                        <p>No 6B, radiators Spring, lightning Estate, Lagos, Nigeria.</p>
+                    </div>
+                    <div>
+                        <div class="order-timeline">
+                            <div class="order-text-head">
+                                <div style="display: flex; align-items: center;">
+                                    <img src="./assets//icons/Group 10279.svg" alt="" style="margin-right: 4px;">
+                                    <p class="order-main-text">Order has arrived</p>
+                                </div>
+                                <p class="order-clock">10:56 AM</p>
+                            </div>
+                            <div style="display: flex; margin-left: 8px;">
+                                <img src="./assets/icons/Line 45.svg" alt="" style=" margin-right: 12px;">
+                                <p class="order-sub-text">Your order has arrived at your location. Pick it up!</p>
+                            </div>
+                        </div>
+                        <div class="order-timeline">
+                            <div>
+                                <div class="order-text-head">
+                                    <div style="display: flex; align-items: center;">
+                                        <img src="./assets/icons/Tick-Check.svg" alt="" style="margin-right: 4px;" width="20px">
+                                        <p class="order-main-text">Order on the way</p>
+                                    </div>
+                                    <p class="order-clock">9:14 AM</p>
+                                </div>
+                                <div>
+                                    <p class="order-sub-text" style="margin-left: 24px;">Your order has been dispatched and is on the way to you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hm-clean-section">
+                <div class="clean-card-header">
+                    <p>Home Cleaning 🏠</p>
+                    <button onclick="openModal(this)" id="clean-modal-btn" data-target="hm-clean-section-modal">
+                        View Status
+                        <img src="./assets/icons/Arrow-2.svg" alt="">
+                    </button>
+                </div>
+                <div style="font-size: 14px; margin-bottom: 8px;">
+                    <p style="font-weight: 300;">Get ready; our cleaner is coming to get your house pampered.</p>
+                </div>
+                <hr style="border: 1px solid rgba(255, 218, 159, 0.5);">
+                <div  class="clean-card-footer">
+                    <img src="./assets/icons/Group.svg" alt="" style="margin-right: 8px;">
+                    <p style="color: #1D352A; font-size: 12px;">10:00 AM - 11:30AM</p>
+                </div>
+            </section>
+            <section id="hm-clean-section-modal" class="modal"> 
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="order-clock">Mon, 08 Sep 2021</p>
+                        <button style="border: 0; background: transparent;" class="modal-button" onclick="closeModal()">
+                            <img src="./assets/icons/Close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="order-status">
+                        <div>🏠</div>
+                        <div>
+                            <p>Order Status</p>
+                            <p>Cleaning completed</p>
+                        </div>
+                    </div>
+                    <div class="delivery-address" style="margin-bottom: 0px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                        <p>Cleaning Address</p>
+                        <p>No 6B, radiators Spring, lightning Estate, Lagos, Nigeria.</p>
+                    </div>
+                    <div class="delivery-address" style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                        <p>Cleaner</p>
+                        <p>Kelechi Oguike</p>
+                    </div>
+                    <div>
+                        <div class="order-timeline">
+                            <div class="order-text-head">
+                                <div style="display: flex; align-items: center;">
+                                    <img src="./assets//icons/Tick-Check.svg" alt="" style="margin-right: 4px;" width="20px">
+                                    <p class="order-main-text">Clean completed</p>
+                                </div>
+                                <p class="order-clock">4:01 PM</p>
+                            </div>
+                            <div style="display: flex; margin-left: 8px;">
+                                <img src="./assets/icons/Line 48.svg" alt="" style=" margin-right: 12px; height: 26px;">
+                                <p class="order-sub-text" style="color: #03A84E; margin-left: 4px;">Give feedback</p>
+                            </div>
+                        </div>
+                        <div class="order-timeline">
+                            <div>
+                                <div class="order-text-head">
+                                    <div style="display: flex; align-items: center;">
+                                        <img src="./assets/icons/Tick-Check.svg" alt="" style="margin-right: 4px;" width="20px">
+                                        <p class="order-main-text">Cleaning started</p>
+                                    </div>
+                                    <p class="order-clock">2:35 PM</p>
+                                </div>
+                                <div style="display: flex; margin-left: 8px;">
+                                    <img src="./assets/icons/Line 48.svg" alt="" style=" margin-right: 12px; height: 26px;">
+                                    <p class="order-sub-text" style="margin-left: 4px;">Your cleaner has started cleaning.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-timeline">
+                            <div>
+                                <div class="order-text-head">
+                                    <div style="display: flex; align-items: center;">
+                                        <img src="./assets/icons/Tick-Check.svg" alt="" style="margin-right: 4px;" width="20px">
+                                        <p class="order-main-text">Cleaning has arrived</p>
+                                    </div>
+                                    <p class="order-clock">2:26 PM</p>
+                                </div>
+                                <div style="display: flex; margin-left: 8px;">
+                                    <img src="./assets/icons/Line 48.svg" alt="" style=" margin-right: 12px; height: 26px;">
+                                    <p class="order-sub-text" style="margin-left: 4px;">Cleaner has arrived at your location.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-timeline">
+                            <div>
+                                <div class="order-text-head">
+                                    <div style="display: flex; align-items: center;">
+                                        <img src="./assets/icons/Tick-Check.svg" alt="" style="margin-right: 4px;" width="20px">
+                                        <p class="order-main-text">Cleaning en route</p>
+                                    </div>
+                                    <p class="order-clock">12:22 PM</p>
+                                </div>
+                                <div style="display: flex; margin-left: 8px;">
+                                    <img src="./assets/icons/Line 48.svg" alt="" style=" margin-right: 12px; height: 32px;">
+                                    <p class="order-sub-text" style="margin-left: 4px;">Your cleaner is on the way to your location!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer>
+                <div>
+                    <img src="./assets/icons/Home.svg" alt="">
+                    Home
+                </div>
+                <div>
+                    <img src="./assets/icons/History.svg" alt="">
+                    History
+                </div>
+                <div>
+                    <img src="./assets/icons/notification Bell.svg" alt="">
+                    Notification
+                </div>
+                <div style="margin-right: 12px;">
+                    <img src="./assets/icons/message - Chat.svg" alt="">
+                    Gardener
+                </div>
+            </footer>
+        </main>
+
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>

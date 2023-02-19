@@ -183,6 +183,8 @@ p{
     height: 100%;
     overflow: auto;
     margin-bottom: 32px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -284,6 +286,7 @@ footer {
     color: #8AA398;
     padding: 6px;
     font-size: 12px;
+    background-color: white;
 }
 footer div {
     display: flex;
@@ -298,14 +301,18 @@ footer div:first-child {
 
 
 
-/* .scale-in-center {
+ .scale-in-center {
 	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-.slide-out-bck-center {
+ .slide-out-bck-center {
 	-webkit-animation: slide-out-bck-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: slide-out-bck-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-} */
+} 
+.scale-out-center {
+	-webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
 .burst {
     animation-name: scale-in-center, slide-out-bck-center;
     animation-delay: 0.5s, 0.5s;
@@ -410,5 +417,11 @@ footer div:first-child {
       -webkit-transform: translateZ(-1100px);
               transform: translateZ(-1100px);
       opacity: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #landing-main, #home-main {
+        padding: 0px 200px;
     }
   }

@@ -17,3 +17,11 @@ window.onclick = event => {
     }
 }
 
+const el = document.querySelector('#confetti-image')
+el.classList.add("scale-in-center")
+
+const removeConfetti = () => {
+    el.classList.remove("scale-in-center")
+    el.classList.add("scale-out-bottom")
+}
+setTimeout(removeConfetti, 2000);

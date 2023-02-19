@@ -57,6 +57,7 @@ body {
 }
 .hbg-name {
     display: flex;
+    align-items: center;
 }
 .hbg-btn {
     background-color: transparent;
